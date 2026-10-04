@@ -14,6 +14,7 @@ namespace ServerApp
         public MainMenuControl()
         {
             InitializeComponent();
+            this.BackColor = Color.FromArgb(120, 60, 180);
         }
 
         private Form1 form;

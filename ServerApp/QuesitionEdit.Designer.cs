@@ -41,21 +41,23 @@
             // 
             // button1
             // 
-            button1.Location = new Point(665, 73);
+            button1.BackColor = Color.Blue;
+            button1.Location = new Point(665, 11);
             button1.Name = "button1";
             button1.Size = new Size(104, 36);
             button1.TabIndex = 0;
             button1.Text = "Save";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
-            button2.Location = new Point(665, 11);
+            button2.BackColor = Color.Red;
+            button2.Location = new Point(665, 53);
             button2.Name = "button2";
             button2.Size = new Size(104, 36);
             button2.TabIndex = 1;
             button2.Text = "Cancel";
-            button2.UseVisualStyleBackColor = true;
+            button2.UseVisualStyleBackColor = false;
             // 
             // textBox1
             // 

@@ -13,6 +13,7 @@ namespace ServerApp
         public QuesitionEdit()
         {
             InitializeComponent();
+            this.BackColor = Color.FromArgb(120, 60, 180);
         }
         private Form1 form;
 

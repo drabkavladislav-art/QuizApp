@@ -6,7 +6,7 @@ namespace ServerApp
         public Form1()
         {
             InitializeComponent();
-
+            this.BackColor = Color.FromArgb(120, 60, 180);
             ShowScreen(new MainMenuControl(this));
         }
 
