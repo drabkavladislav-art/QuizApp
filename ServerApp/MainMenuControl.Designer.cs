@@ -45,36 +45,45 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(217, 11);
+            label1.FlatStyle = FlatStyle.Flat;
+            label1.Font = new Font("Segoe UI", 24F);
+            label1.ForeColor = Color.Black;
+            label1.Location = new Point(159, 0);
             label1.Name = "label1";
-            label1.Size = new Size(71, 20);
+            label1.Size = new Size(189, 54);
             label1.TabIndex = 0;
             label1.Text = "Quiz App";
             // 
             // Open1
             // 
-            Open1.Location = new Point(3, 182);
+            Open1.BackColor = Color.GreenYellow;
+            Open1.Font = new Font("Segoe UI", 12F);
+            Open1.ForeColor = Color.Black;
+            Open1.Location = new Point(3, 184);
             Open1.Name = "Open1";
-            Open1.Size = new Size(150, 31);
+            Open1.Size = new Size(150, 39);
             Open1.TabIndex = 1;
             Open1.Text = "Open quiz";
-            Open1.UseVisualStyleBackColor = true;
+            Open1.UseVisualStyleBackColor = false;
             Open1.Click += button1_Click;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(105, 65);
+            textBox1.Location = new Point(107, 75);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(298, 52);
             textBox1.TabIndex = 2;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(170, 42);
+            label2.Font = new Font("Segoe UI", 11F);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(159, 47);
             label2.Name = "label2";
-            label2.Size = new Size(151, 20);
+            label2.Size = new Size(195, 25);
             label2.TabIndex = 3;
             label2.Text = "Enter Quiz name here";
             label2.Click += label2_Click;
@@ -82,9 +91,11 @@
             // button2
             // 
             button2.BackColor = Color.Red;
-            button2.Location = new Point(140, 123);
+            button2.Font = new Font("Segoe UI", 15F);
+            button2.ForeColor = Color.White;
+            button2.Location = new Point(140, 133);
             button2.Name = "button2";
-            button2.Size = new Size(231, 27);
+            button2.Size = new Size(231, 43);
             button2.TabIndex = 4;
             button2.Text = "Create new Quiz";
             button2.UseVisualStyleBackColor = false;
@@ -92,60 +103,70 @@
             // 
             // button3
             // 
-            button3.Location = new Point(3, 219);
+            button3.BackColor = Color.GreenYellow;
+            button3.Font = new Font("Segoe UI", 12F);
+            button3.Location = new Point(3, 235);
             button3.Name = "button3";
-            button3.Size = new Size(150, 31);
+            button3.Size = new Size(150, 41);
             button3.TabIndex = 6;
             button3.Text = "Open quiz";
-            button3.UseVisualStyleBackColor = true;
+            button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
             // 
             // button4
             // 
-            button4.Location = new Point(3, 256);
+            button4.BackColor = Color.GreenYellow;
+            button4.Font = new Font("Segoe UI", 12F);
+            button4.Location = new Point(0, 282);
             button4.Name = "button4";
-            button4.Size = new Size(150, 31);
+            button4.Size = new Size(150, 45);
             button4.TabIndex = 7;
             button4.Text = "Open quiz";
-            button4.UseVisualStyleBackColor = true;
+            button4.UseVisualStyleBackColor = false;
             button4.Click += button4_Click;
             // 
             // button5
             // 
-            button5.Location = new Point(3, 293);
+            button5.BackColor = Color.GreenYellow;
+            button5.Font = new Font("Segoe UI", 12F);
+            button5.Location = new Point(0, 333);
             button5.Name = "button5";
-            button5.Size = new Size(150, 31);
+            button5.Size = new Size(150, 41);
             button5.TabIndex = 8;
             button5.Text = "Open quiz";
-            button5.UseVisualStyleBackColor = true;
+            button5.UseVisualStyleBackColor = false;
             button5.Click += button5_Click;
             // 
             // textBox2
             // 
             textBox2.Location = new Point(159, 184);
+            textBox2.Multiline = true;
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(225, 27);
+            textBox2.Size = new Size(225, 45);
             textBox2.TabIndex = 9;
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(159, 219);
+            textBox3.Location = new Point(159, 235);
+            textBox3.Multiline = true;
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(225, 27);
+            textBox3.Size = new Size(225, 41);
             textBox3.TabIndex = 10;
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(159, 258);
+            textBox4.Location = new Point(159, 282);
+            textBox4.Multiline = true;
             textBox4.Name = "textBox4";
-            textBox4.Size = new Size(225, 27);
+            textBox4.Size = new Size(225, 43);
             textBox4.TabIndex = 11;
             // 
             // textBox5
             // 
-            textBox5.Location = new Point(159, 291);
+            textBox5.Location = new Point(159, 333);
+            textBox5.Multiline = true;
             textBox5.Name = "textBox5";
-            textBox5.Size = new Size(225, 27);
+            textBox5.Size = new Size(225, 41);
             textBox5.TabIndex = 12;
             // 
             // MainMenuControl
@@ -166,7 +187,7 @@
             Controls.Add(Open1);
             Controls.Add(label1);
             Name = "MainMenuControl";
-            Size = new Size(566, 358);
+            Size = new Size(566, 447);
             Load += MainMenuControl_Load;
             ResumeLayout(false);
             PerformLayout();

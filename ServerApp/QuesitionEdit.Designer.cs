@@ -43,6 +43,7 @@
             // button1
             // 
             button1.BackColor = Color.Blue;
+            button1.Font = new Font("Segoe UI", 12F);
             button1.Location = new Point(665, 11);
             button1.Name = "button1";
             button1.Size = new Size(104, 36);
@@ -53,6 +54,7 @@
             // button2
             // 
             button2.BackColor = Color.Red;
+            button2.Font = new Font("Segoe UI", 12F);
             button2.Location = new Point(665, 53);
             button2.Name = "button2";
             button2.Size = new Size(104, 36);
@@ -103,18 +105,22 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(344, 11);
+            label1.Font = new Font("Segoe UI", 15F);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(304, 0);
             label1.Name = "label1";
-            label1.Size = new Size(110, 20);
+            label1.Size = new Size(185, 35);
             label1.TabIndex = 7;
             label1.Text = "Enter Quesition";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(344, 252);
+            label2.Font = new Font("Segoe UI", 15F);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(318, 267);
             label2.Name = "label2";
-            label2.Size = new Size(101, 20);
+            label2.Size = new Size(171, 35);
             label2.TabIndex = 8;
             label2.Text = "Enter Answers";
             label2.Click += label2_Click;
@@ -122,6 +128,7 @@
             // button3
             // 
             button3.BackColor = Color.HotPink;
+            button3.Font = new Font("Segoe UI", 12F);
             button3.Location = new Point(12, 21);
             button3.Name = "button3";
             button3.Size = new Size(112, 39);

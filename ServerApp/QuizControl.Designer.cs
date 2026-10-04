@@ -44,9 +44,10 @@
             // button1
             // 
             button1.BackColor = Color.Blue;
+            button1.Font = new Font("Segoe UI", 12F);
             button1.Location = new Point(12, 13);
             button1.Name = "button1";
-            button1.Size = new Size(119, 30);
+            button1.Size = new Size(119, 40);
             button1.TabIndex = 0;
             button1.Text = "Add Quesition";
             button1.UseVisualStyleBackColor = false;
@@ -55,9 +56,10 @@
             // button2
             // 
             button2.BackColor = Color.Orange;
+            button2.Font = new Font("Segoe UI", 12F);
             button2.Location = new Point(297, 13);
             button2.Name = "button2";
-            button2.Size = new Size(119, 30);
+            button2.Size = new Size(119, 40);
             button2.TabIndex = 1;
             button2.Text = "Start  Quiz";
             button2.UseVisualStyleBackColor = false;
@@ -69,10 +71,11 @@
             label1.BackColor = SystemColors.InactiveCaption;
             label1.BorderStyle = BorderStyle.Fixed3D;
             label1.Cursor = Cursors.Cross;
+            label1.Font = new Font("Segoe UI", 11F);
             label1.ForeColor = Color.Black;
-            label1.Location = new Point(143, 50);
+            label1.Location = new Point(123, 56);
             label1.Name = "label1";
-            label1.Size = new Size(141, 22);
+            label1.Size = new Size(180, 27);
             label1.TabIndex = 2;
             label1.Text = "Select Quetion here";
             // 
@@ -107,6 +110,7 @@
             // Q1
             // 
             Q1.BackColor = Color.Red;
+            Q1.Font = new Font("Segoe UI", 12F);
             Q1.Location = new Point(344, 85);
             Q1.Name = "Q1";
             Q1.Size = new Size(72, 37);
@@ -118,6 +122,7 @@
             // Q2
             // 
             Q2.BackColor = Color.Red;
+            Q2.Font = new Font("Segoe UI", 12F);
             Q2.Location = new Point(344, 132);
             Q2.Name = "Q2";
             Q2.Size = new Size(72, 37);
@@ -129,6 +134,7 @@
             // Q3
             // 
             Q3.BackColor = Color.Red;
+            Q3.Font = new Font("Segoe UI", 12F);
             Q3.Location = new Point(347, 175);
             Q3.Name = "Q3";
             Q3.Size = new Size(72, 37);
@@ -140,6 +146,7 @@
             // Q4
             // 
             Q4.BackColor = Color.Red;
+            Q4.Font = new Font("Segoe UI", 12F);
             Q4.Location = new Point(344, 223);
             Q4.Name = "Q4";
             Q4.Size = new Size(72, 37);

@@ -62,5 +62,10 @@ namespace ServerApp
         {
             form.ShowScreen(new QuizControl(form));
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

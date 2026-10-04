@@ -36,6 +36,7 @@
             // button1
             // 
             button1.BackColor = Color.Red;
+            button1.Font = new Font("Segoe UI", 12F);
             button1.Location = new Point(3, 3);
             button1.Name = "button1";
             button1.Size = new Size(106, 40);
@@ -55,6 +56,7 @@
             // button2
             // 
             button2.BackColor = Color.Orange;
+            button2.Font = new Font("Segoe UI", 12F);
             button2.Location = new Point(344, 3);
             button2.Name = "button2";
             button2.Size = new Size(129, 44);
