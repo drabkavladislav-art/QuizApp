@@ -8,29 +8,28 @@ using System.Windows.Forms;
 
 namespace ServerApp
 {
-    public partial class QuesitionEdit : UserControl
+    public partial class StatusOfUsers : UserControl
     {
-        public QuesitionEdit()
+        public StatusOfUsers()
         {
             InitializeComponent();
-            this.BackColor = Color.FromArgb(120, 60, 180);
         }
         private Form1 form;
 
-        public QuesitionEdit(Form1 form)
+        public StatusOfUsers(Form1 form)
         {
             InitializeComponent();
 
             this.form = form;
         }
-        private void label2_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            form.ShowScreen(new QuizControl(form));
+            form.ShowScreen(new MainMenuControl(form));
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            form.ShowScreen(new QuizControl(form));
+            form.ShowScreen(new ControlGame(form));
         }
     }
 }

@@ -37,6 +37,7 @@
             textBox5 = new TextBox();
             label1 = new Label();
             label2 = new Label();
+            button3 = new Button();
             SuspendLayout();
             // 
             // button1
@@ -118,10 +119,23 @@
             label2.Text = "Enter Answers";
             label2.Click += label2_Click;
             // 
+            // button3
+            // 
+            button3.BackColor = Color.HotPink;
+            button3.Location = new Point(12, 21);
+            button3.Name = "button3";
+            button3.Size = new Size(112, 39);
+            button3.TabIndex = 9;
+            button3.Text = "Back";
+            button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
+            // 
             // QuesitionEdit
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Indigo;
+            Controls.Add(button3);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(textBox5);
@@ -148,5 +162,6 @@
         private TextBox textBox5;
         private Label label1;
         private Label label2;
+        private Button button3;
     }
 }

@@ -81,12 +81,13 @@
             // 
             // button2
             // 
+            button2.BackColor = Color.Red;
             button2.Location = new Point(140, 123);
             button2.Name = "button2";
             button2.Size = new Size(231, 27);
             button2.TabIndex = 4;
             button2.Text = "Create new Quiz";
-            button2.UseVisualStyleBackColor = true;
+            button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
             // button3
@@ -151,6 +152,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Indigo;
             Controls.Add(textBox5);
             Controls.Add(textBox4);
             Controls.Add(textBox3);

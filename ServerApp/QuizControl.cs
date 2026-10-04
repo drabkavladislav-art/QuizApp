@@ -32,7 +32,7 @@ namespace ServerApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            form.ShowScreen(new QuesitionEdit(form));
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -53,6 +53,11 @@ namespace ServerApp
         private void Q4_Click(object sender, EventArgs e)
         {
             form.ShowScreen(new QuesitionEdit(form));
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            form.ShowScreen(new StatusOfUsers(form));
         }
     }
 }
