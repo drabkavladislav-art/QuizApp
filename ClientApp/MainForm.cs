@@ -22,6 +22,12 @@ namespace ClientApp
             int score = -1;
             int position = -1;
             int seconds = 5;
+            string winner1Name = "Player -1";
+            int winner1Score = -1;
+            string winner2Name = "Player -2";
+            int winner2Score = -1;
+            string winner3Name = "Player -3";
+            int winner3Score = -1;
             bool waitRoom = true;
 
             using (JoinForm joinForm = new())
@@ -62,10 +68,19 @@ namespace ClientApp
             {
                 if (answerForm.ShowDialog() != DialogResult.OK)
                 {
+                    //this.Close();
+                    //return;
+                }
+            }
+            using (GameEndForm gameEndForm = new(winner1Name, winner1Score, winner2Name, winner2Score, winner3Name, winner3Score))
+            {
+                if (gameEndForm.ShowDialog() != DialogResult.OK)
+                {
                     this.Close();
                     return;
                 }
             }
+
             this.Close();
         }
 
