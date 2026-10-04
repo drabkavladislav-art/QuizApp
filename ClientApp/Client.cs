@@ -59,13 +59,13 @@ namespace ClientApp
             if (_stream == null || !_client.Connected)
                 return;
             string innerJson = JsonSerializer.Serialize(packet);
-            //var wrapper = new PacketWrapper
-            //{
-            //    PacketType = typeof(T).Name, 
-            //    JsonData = innerJson
-            //};
-            //string finalJson = JsonSerializer.Serialize(wrapper);
-            //await SendMessage(finalJson + "\n");
+            var wrapper = new PacketWrapper
+            {
+                PacketType = typeof(T).Name,
+                JsonData = innerJson
+            };
+            string finalJson = JsonSerializer.Serialize(wrapper);
+            await SendMessage(finalJson + "\n");
         }
 
 
