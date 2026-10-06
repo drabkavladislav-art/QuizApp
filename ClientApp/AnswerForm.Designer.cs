@@ -30,8 +30,8 @@
         {
             lCorrect = new Label();
             panel1 = new Panel();
-            lScore = new Label();
             lAnswer = new Label();
+            lScore = new Label();
             lPosition = new Label();
             lGood = new Label();
             lVeryGoodYed = new Label();
@@ -60,18 +60,6 @@
             panel1.Size = new Size(776, 89);
             panel1.TabIndex = 13;
             // 
-            // lScore
-            // 
-            lScore.AutoSize = true;
-            lScore.BackColor = Color.Transparent;
-            lScore.Font = new Font("Segoe UI Black", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            lScore.ForeColor = Color.White;
-            lScore.Location = new Point(7, 227);
-            lScore.Name = "lScore";
-            lScore.Size = new Size(192, 37);
-            lScore.TabIndex = 9;
-            lScore.Text = "You're score:";
-            // 
             // lAnswer
             // 
             lAnswer.AutoSize = true;
@@ -83,6 +71,18 @@
             lAnswer.Size = new Size(184, 28);
             lAnswer.TabIndex = 9;
             lAnswer.Text = "Answer be here...";
+            // 
+            // lScore
+            // 
+            lScore.AutoSize = true;
+            lScore.BackColor = Color.Transparent;
+            lScore.Font = new Font("Segoe UI Black", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            lScore.ForeColor = Color.White;
+            lScore.Location = new Point(7, 227);
+            lScore.Name = "lScore";
+            lScore.Size = new Size(192, 37);
+            lScore.TabIndex = 9;
+            lScore.Text = "You're score:";
             // 
             // lPosition
             // 
@@ -132,7 +132,7 @@
             Controls.Add(lScore);
             Controls.Add(panel1);
             Name = "AnswerForm";
-            Text = "AnswerForm";
+            Text = "Quiz ClientApp - Answer";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);

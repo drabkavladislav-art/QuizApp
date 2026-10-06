@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ClientApp
@@ -11,23 +7,9 @@ namespace ClientApp
     public partial class QuestionForm : Form
     {
         public string SelectedOption { get; private set; }
+        public event Action<string> OnAnswerSubmitted;
         private int _s = 0;
 
-        public void SetEndStatus()
-        {
-            if (this.InvokeRequired)
-            {
-                this.Invoke(new Action(() =>
-                {
-                    this.DialogResult = DialogResult.OK;
-                    this.Close();
-                }));
-                return;
-            }
-
-            this.DialogResult = DialogResult.OK;
-            this.Close();
-        }
         public QuestionForm()
         {
             InitializeComponent();
@@ -78,13 +60,10 @@ namespace ClientApp
             SubmitAnswer(btnDOption4.Text);
         }
 
-
         private void SubmitAnswer(string option)
         {
             SelectedOption = option;
-            SetEndStatus();     
+            OnAnswerSubmitted?.Invoke(option);
         }
-
-        
     }
 }
